@@ -1,0 +1,60 @@
+ 
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+header{
+	background: rgb(186,191,232);
+}
+body{
+	background-image: url("/Users/Max Brimhall/Documents/Calculator/pictures/4seasons.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+section{
+	font-size: 50px;
+	background: white;
+}   	
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+	display: flex;
+	justify-content: center;
+}
+li{
+	display: inline-flex;
+	text-align: center;
+	margin: 5px;
+}
+h1, p{
+	display: flex;
+	justify-content: center;
+}
+section{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+} 
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
